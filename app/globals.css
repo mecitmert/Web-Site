@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Renk ve font değişkenleri */
 :root {
   --background: #ffffff;

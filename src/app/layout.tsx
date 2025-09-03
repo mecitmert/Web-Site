@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import PillNav from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "MMB Yazılım | Web, SEO, Performans",
@@ -14,10 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const navItems = [
+    { label: "Ana Sayfa", href: "/" },
+    { label: "Hizmetler", href: "/hizmetler" },
+    { label: "Blog", href: "/blog" },
+    { label: "İletişim", href: "/iletisim" },
+  ];
   return (
     <html lang="tr">
       <body className="min-h-dvh bg-white text-slate-900">
-        {/* Header */}
+        {/*
+         Header 
         <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur">
           <nav className="mx-auto flex max-w-6xl items-center justify-between p-4">
             <a className="font-bold">MMB Yazılım</a>
@@ -34,6 +42,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </nav>
         </header>
+        */}
+
+        {/* Navbar */}
+        <PillNav logo="/logo.svg" items={navItems} />
+
 
         {/* Page content */}
         <main className="mx-auto max-w-6xl p-4">{children}</main>

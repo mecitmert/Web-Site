@@ -1,3 +1,4 @@
+import { Button} from "@/components/Buttons";
 export default function Page() {
   return (
     <section className="grid gap-10 py-14 md:grid-cols-2">
@@ -10,12 +11,8 @@ export default function Page() {
           Trendyol/Hepsiburada entegrasyon danışmanlığı ve reklam optimizasyonu.
         </p>
         <div className="mt-6 flex gap-3">
-          <a href="/iletisim" className="rounded-xl px-5 py-2.5 border">
-            Ücretsiz Keşif Çağrısı
-          </a>
-          <a href="/hizmetler" className="rounded-xl px-5 py-2.5 border">
-            Hizmetler
-          </a>
+          <Button href="/iletisim" shiny speed={5}>Ücretsiz Keşif Çağrısı</Button>
+          <Button href="hizmetler">Hizmetlerimiz</Button>
         </div>
         <ul className="mt-6 grid gap-2 text-sm text-slate-600">
           <li>• SSR/SSG ile güçlü SEO</li>
@@ -40,7 +37,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      
+
     </section>
   );
 }

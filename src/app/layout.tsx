@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import PillNav from "@/components/navbar";
+import PillNav from "@/components/Navbar";
 import DarkVeil from "@/components/Background";
 
 export const metadata: Metadata = {

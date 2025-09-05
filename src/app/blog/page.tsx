@@ -14,16 +14,18 @@ export default function Blog() {
     });
 
   return (
-    <section className="py-10">
-      <h1 className="text-3xl font-bold">Blog</h1>
-      <div className="mt-6 grid gap-4">
-        {posts.map((p:any) => (
-          <a key={p.slug} href={`/blog/${p.slug}`} className="rounded-2xl border p-5">
-            <div className="text-xl font-semibold">{p.title}</div>
-            <div className="text-slate-600 text-sm">{p.description}</div>
-          </a>
-        ))}
-      </div>
-    </section>
+    <div className="min-h-screen">
+      <section className="py-10 mt-16">
+        <h1 className="text-3xl font-bold">Blog</h1>
+        <div className="mt-6 grid gap-4">
+          {posts.map((p: any) => (
+            <a key={p.slug} href={`/blog/${p.slug}`} className="rounded-2xl border p-5">
+              <div className="text-xl font-semibold">{p.title}</div>
+              <div className="text-slate-600 text-sm">{p.description}</div>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

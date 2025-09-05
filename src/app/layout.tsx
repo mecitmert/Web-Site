@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* İçerik */}
         <div className="relative z-10">
           <PillNav logo="/logo.svg" items={navItems} />
-          <main className="mx-auto max-w-6xl p-4">{children}</main>
+          <main className="mx-auto max-w-6xl p-4 ">{children}</main>
           <Footer />
         </div>
       </body>

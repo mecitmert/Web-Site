@@ -6,7 +6,8 @@ export default function Services() {
     { title: "Pazar Yeri Performansı", desc: "Trendyol, Hepsiburada, n11 danışmanlığı." },
   ];
   return (
-    <section className="py-10">
+    <div className="min-h-screen">
+      <section className="py-10 mt-16">
       <h1 className="text-3xl font-bold">Hizmetler</h1>
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {items.map((x) => (
@@ -16,6 +17,8 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </section>
+      </section>
+    </div>
+    
   );
 }

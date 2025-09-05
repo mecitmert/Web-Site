@@ -48,7 +48,7 @@ const STATS = [
 
 export default function HakkimizdaPage() {
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-16 md:space-y-24  ">
       {/* Hero */}
       <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-b from-slate-50 to-white p-8 md:p-16 mt-20">
         <div className="absolute inset-0 -z-10">

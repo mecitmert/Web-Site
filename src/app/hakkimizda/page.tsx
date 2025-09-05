@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Rocket, Shield, LineChart, Users, Sparkles, ArrowRight } from "lucide-react";
+import { Button } from "@/components/Buttons";
 
 export const metadata: Metadata = {
   title: "Hakkımızda | MMB Yazılım",
@@ -49,11 +50,11 @@ export default function HakkimizdaPage() {
   return (
     <div className="space-y-16 md:space-y-24">
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-b from-slate-50 to-white p-8 md:p-16">
+      <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-b from-slate-50 to-white p-8 md:p-16 mt-20">
         <div className="absolute inset-0 -z-10">
           <div className="pointer-events-none absolute left-1/2 top-[-6rem] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full blur-3xl opacity-30 bg-gradient-to-tr from-sky-300 via-cyan-200 to-teal-200" />
         </div>
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
             <Sparkles className="h-4 w-4" aria-hidden /> Web • SEO • Performans
           </span>
@@ -64,18 +65,16 @@ export default function HakkimizdaPage() {
             MMB Yazılım; modern web teknolojileri, SEO mimarisi ve performans optimizasyonu ile sürdürülebilir büyüme sağlar. Kullanıcıyı merkeze alan, ölçülebilir sonuçlar üretiriz.
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
-            <Link
-              href="/iletisim"
-              className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-slate-400"
+            <Button
+              href="/iletisim" shiny color="primary"
             >
-              Bizimle İletişime Geçin <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-            <Link
-              href="/hizmetler"
-              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              Bizimle İletişime Geçin 
+            </Button>
+            <Button
+              href="/hizmetler" color="black"
             >
               Hizmetlerimizi Görün
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -83,8 +82,8 @@ export default function HakkimizdaPage() {
       {/* Values */}
       <section>
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">Değer Önerimiz</h2>
-          <p className="mt-2 max-w-2xl text-slate-600">
+          <h2 className="text-2xl font-bold tracking-tight text-white text-slate-900 md:text-3xl uppercase">Değer Önerimiz</h2>
+          <p className="mt-2 max-w-full text-white text-slate-600">
             Proje ve ürünlerinizde teknik borcu azaltan, bakım maliyetini düşüren ve dönüşümü artıran net ilkelerle çalışırız.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -121,7 +120,7 @@ export default function HakkimizdaPage() {
       {/* Process timeline */}
       <section>
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">Nasıl Çalışıyoruz?</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl text-white uppercase">Nasıl Çalışıyoruz?</h2>
           <ol className="mt-8 space-y-6">
             {[
               {
@@ -187,7 +186,7 @@ export default function HakkimizdaPage() {
       {/* FAQ */}
       <section>
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">Sık Sorulanlar</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl text-white uppercase">¿ Sıkça Sorulanlar</h2>
           <div className="mt-6 space-y-4">
             <details className="rounded-2xl border bg-white p-5">
               <summary className="cursor-pointer list-none text-base font-semibold text-slate-900">

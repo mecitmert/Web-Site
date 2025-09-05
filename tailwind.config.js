@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)"
+        foreground: "var(--foreground)",
+        primary: "#088aa6"
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui"],
@@ -34,38 +35,6 @@ module.exports = {
     }
   },
   plugins: [
-  function ({ addComponents }) {
-    addComponents({
-      ".button": {
-        padding: "0.75rem 1.5rem",
-        borderRadius: "1rem",
-        border: "1px solid rgba(255,255,255,0.2)",
-        backgroundColor: "rgba(255,255,255,0.1)",
-        backdropFilter: "blur(10px)",
-        fontWeight: "600",
-        fontSize: "1.125rem",
-        color: "#fff",
-        transition: "transform 0.2s",
-        cursor: "pointer",
-      },
-      ".shinyButton": {
-        padding: "0.75rem 1.5rem",
-        borderRadius: "1rem",
-        border: "1px solid rgba(255,255,255,0.2)",
-        backgroundColor: "rgba(255,255,255,0.1)",
-        backdropFilter: "blur(10px)",
-        fontWeight: "600",
-        fontSize: "1.125rem",
-        color: "transparent",
-        backgroundClip: "text",
-        backgroundImage: "linear-gradient(90deg, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.2) 75%)",
-        backgroundSize: "200% 100%",
-        animation: "shine 3s linear infinite",
-        transition: "transform 0.2s",
-        cursor: "pointer",
-      }
-    });
-  }
 ]
 
 };

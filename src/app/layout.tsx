@@ -9,6 +9,9 @@ import DarkVeil from "@components/Background";
 export const metadata: Metadata = {
   title: "MMB Yazılım | Web, SEO, Performans",
   description: "Next.js tabanlı, SEO odaklı ajans sitesi.",
+  icons: {
+    icon: "/logo.svg", // ✅ favicon olarak SVG logo
+  },
   metadataBase: new URL("https://www.mmbyazilim.com"),
   openGraph: {
     title: "MMB Yazılım",

@@ -15,18 +15,16 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
 
-    // ✅ ALIAS - src tabanlı importlar için
-    "baseUrl": "./src",
+    // ✅ Alias yapılandırması (kök bazlı)
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"],
-      "@components/*": ["components/*"],
-      "@app/*": ["app/*"],
-      "@lib/*": ["lib/*"],
-      "@styles/*": ["styles/*"]
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@app/*": ["src/app/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
-
-  // ✅ Yalnızca src altındaki kodları derle
   "include": [
     "next-env.d.ts",
     "src/**/*",

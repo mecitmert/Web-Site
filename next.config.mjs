@@ -1,11 +1,15 @@
 import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 
   webpack: (config) => {
-    // Alias yapılandırması
     config.resolve.alias["@"] = path.resolve(__dirname, "src");
     config.resolve.alias["@components"] = path.resolve(__dirname, "src/components");
     config.resolve.alias["@app"] = path.resolve(__dirname, "src/app");

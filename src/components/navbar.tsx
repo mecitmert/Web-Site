@@ -10,8 +10,10 @@ const navItems = [
   { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "Hizmetler", href: "/hizmetler" },
   { label: "Projeler / Referanslar", href: "/referanslar" },
+   { label: "Kullandığımız Teknlojiler", href: "/teknolojiler" },
   { label: "Bilgi Köşesi", href: "/blog" },
   { label: "İletişim", href: "/iletisim" },
+ 
 ];
 
 export default function Navbar() {

@@ -9,7 +9,7 @@ function SubmitButton() {
   return (
     <button
       disabled={pending}
-      className="rounded-xl border px-5 py-3 disabled:opacity-60"
+      className="rounded-xl border px-5 py-3 disabled:opacity-60 bg-white text-black hover:bg-gray-100 transition-colors"
     >
       {pending ? "Gönderiliyor..." : "Gönder"}
     </button>
@@ -33,33 +33,33 @@ export default function ContactForm() {
       <input
         name="ad"
         placeholder="Ad Soyad"
-        className="rounded-xl border p-3"
+        className="rounded-xl border p-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
       />
       <input
         name="email"
         type="email"
         placeholder="E-posta"
-        className="rounded-xl border p-3"
+        className="rounded-xl border p-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
       />
       <input
         name="telefon"
         placeholder="Telefon"
-        className="rounded-xl border p-3"
+        className="rounded-xl border p-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <textarea
         name="mesaj"
         placeholder="Mesajınız"
-        className="min-h-32 rounded-xl border p-3"
+        className="min-h-32 rounded-xl border p-3 bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
       />
       <SubmitButton />
       {result === "ok" && (
-        <p className="text-sm text-green-500">Teşekkürler! En kısa sürede dönüş yapacağız.</p>
+        <p className="text-sm text-green-400">Teşekkürler! En kısa sürede dönüş yapacağız.</p>
       )}
       {result === "err" && (
-        <p className="text-sm text-red-500">Bir hata oluştu. Lütfen tekrar deneyin.</p>
+        <p className="text-sm text-red-400">Bir hata oluştu. Lütfen tekrar deneyin.</p>
       )}
     </form>
   );

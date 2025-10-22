@@ -12,6 +12,7 @@ const logos = [
   "n11.png",
   "koctas.png",
   "Idefix.png",
+  "pazarama.svg"
 ];
 
 export default function LogoSlider() {

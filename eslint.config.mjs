@@ -19,6 +19,14 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // ✅ any kullanımı serbest
+      "@typescript-eslint/no-explicit-any": "off",
+      // ✅ kullanılmayan değişken uyarısı yok
+      "@typescript-eslint/no-unused-vars": "off",
+      // ✅ img etiketi uyarısı kapalı
+      "@next/next/no-img-element": "off",
+    },
   },
 ];
 

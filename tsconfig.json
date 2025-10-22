@@ -15,14 +15,13 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
 
-    // ✅ Alias yapılandırması (kök bazlı)
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@app/*": ["src/app/*"],
-      "@lib/*": ["src/lib/*"],
-      "@styles/*": ["src/styles/*"]
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@app/*": ["app/*"],
+      "@lib/*": ["lib/*"],
+      "@styles/*": ["styles/*"]
     }
   },
   "include": [

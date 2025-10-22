@@ -15,10 +15,14 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
 
-    // ✅ ALIAS — src tabanlı importlar için
+    // ✅ ALIAS - src tabanlı importlar için
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@app/*": ["app/*"],
+      "@lib/*": ["lib/*"],
+      "@styles/*": ["styles/*"]
     }
   },
 

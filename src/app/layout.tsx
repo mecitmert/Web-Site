@@ -1,8 +1,9 @@
-import "./globals.css";
+import "@/globals.css";
 import type { Metadata } from "next";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import DarkVeil from "../components/Background";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import DarkVeil from "@/components/Background";
+
 
 export const metadata: Metadata = {
   title: "MMB Yazılım | Web, SEO, Performans",

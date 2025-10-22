@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import DarkVeil from "@/components/Background";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import DarkVeil from "../components/Background";
 
 export const metadata: Metadata = {
   title: "MMB Yazılım | Web, SEO, Performans",
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     title: "MMB Yazılım",
     description: "Web • SEO • Performans",
     type: "website",
+    url: "https://www.mmbyazilim.com",
   },
 };
 
@@ -33,9 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* İçerik */}
         <div className="relative z-10">
-          
           <Navbar />
-          <main className="mx-auto max-w-6xl p-4 ">{children}</main>
+          <main className="mx-auto max-w-6xl p-4">{children}</main>
           <Footer />
         </div>
       </body>
